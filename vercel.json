@@ -1,0 +1,15 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "population.json",
+        "use": "@now/node"
+      }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "index.json"
+        }
+    ]
+  }
